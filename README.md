@@ -5,6 +5,8 @@ A clone of Lazada Cart Page using Flutter (A cross-platform framework by Google)
 
 ## Screenshots
 
-![android](https://raw.githubusercontent.com/thaihoa-fe/lzd_cart_flutter/master/android.png "Android")
+### Android
+<img src="https://raw.githubusercontent.com/thaihoa-fe/lzd_cart_flutter/master/android.png" width="250" />
 
-![iPhoneX](https://raw.githubusercontent.com/thaihoa-fe/lzd_cart_flutter/master/ios.png "iPhoneX")
+### iOS
+<img src="https://raw.githubusercontent.com/thaihoa-fe/lzd_cart_flutter/master/ios.png" width="250" />
