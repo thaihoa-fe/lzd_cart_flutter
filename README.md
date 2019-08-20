@@ -1,4 +1,4 @@
-# flutter_lzd_cart
+# Lazada Cart Clone
 
 A clone of Lazada Cart Page using Flutter (A cross-platform framework by Google)
 
