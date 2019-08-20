@@ -1,4 +1,6 @@
-class CartProduct {
+import 'package:equatable/equatable.dart';
+
+class CartProduct extends Equatable {
   final String name;
   final String image;
   final String brand;
@@ -18,7 +20,7 @@ class CartProduct {
       this.price,
       this.salePrice,
       this.quantity,
-      this.tip});
+      this.tip}): super([id, name, quantity]);
 
   factory CartProduct.fromJson(Map<String, dynamic> json) {
     return CartProduct(
@@ -67,22 +69,8 @@ class CartProduct {
     if (salePrice != null) {
       return ((price / salePrice) * 100).round();
     }
-    return null;
+    return 100;
   }
-
-  @override
-  bool operator ==(Object p) {
-    if (!(p is CartProduct)) {
-      return false;
-    }
-    if (identical(this, p)) {
-      return true;
-    }
-    return (p as CartProduct).id == this.id;
-  }
-
-  @override
-  int get hashCode => id.hashCode ^ name.hashCode;
 }
 
 class CartProductAttribute {

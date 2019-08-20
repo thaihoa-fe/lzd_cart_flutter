@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lzd_cart/widgets/number_picker.dart';
+import 'package:flutter_lzd_cart/ui/widgets/number_picker.dart';
 import 'package:flutter_lzd_cart/helpers/formatter.dart';
-import 'package:flutter_lzd_cart/widgets/custom_radio.dart';
-import 'package:flutter_lzd_cart/view_models/cart_product.dart';
+import 'package:flutter_lzd_cart/ui/widgets/custom_radio.dart';
+import 'package:flutter_lzd_cart/models/cart_product.dart';
 
 typedef void RadioClickCallback(CartProduct product);
 typedef void UpdateProductCallback(CartProduct product);
@@ -28,7 +28,7 @@ class CartItem extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 5, right: 10),
+                padding: const EdgeInsets.only(left: 0, right: 5),
                 child: CustomRadio(
                   state: radioState,
                   onChange: (state) {

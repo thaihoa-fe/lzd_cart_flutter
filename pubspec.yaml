@@ -22,6 +22,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   http_client: ^1.2.0
   intl: ^0.15.8
+  equatable: ^0.3.0
+  flutter_bloc: ^0.21.0
 
 dev_dependencies:
   flutter_test:

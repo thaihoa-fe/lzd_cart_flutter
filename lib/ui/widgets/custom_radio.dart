@@ -23,16 +23,19 @@ class CustomRadio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: handleChange,
-      child: Container(
-        alignment: Alignment.center,
-        width: 18,
-        height: 18,
-        decoration: buildBoxDecoration(),
-        child: state == RadioState.SELECTED ?
-          Icon(Icons.check, size: 10, color: Colors.white,) : null
-        ,
+      child: Padding(
+        padding: const EdgeInsets.all(7),
+        child: Container(
+          alignment: Alignment.center,
+          width: 18,
+          height: 18,
+          decoration: buildBoxDecoration(),
+          child: state == RadioState.SELECTED ?
+            Icon(Icons.check, size: 10, color: Colors.white,) : null
+          ,
+        ),
       ),
     );
   }

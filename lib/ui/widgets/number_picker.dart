@@ -15,9 +15,9 @@ class NumberPicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 20,
+      height: 25,
       child: Row(children: [
-        GestureDetector(
+        InkWell(
           onTap: () {
             int newValue = value - 1;
             if (newValue >= min) {
@@ -27,17 +27,17 @@ class NumberPicker extends StatelessWidget {
           child: Container(
             alignment: Alignment.center,
             child: Text('-'),
-            width: 20,
-            height: 20,
+            width: 25,
+            height: 25,
           ),
         ),
         Container(
-          width: 37,
+          width: 20,
           color: Color.fromRGBO(248, 248, 248, 1),
           alignment: Alignment.center,
           child: Text('${this.value}'),
         ),
-        GestureDetector(
+        InkWell(
           onTap: () {
             int newValue = value + 1;
             if (newValue <= max) {
@@ -47,8 +47,8 @@ class NumberPicker extends StatelessWidget {
           child: Container(
             alignment: Alignment.center,
             child: Text('+'),
-            width: 20,
-            height: 20,
+            width: 25,
+            height: 25,
           ),
         ),
       ]),
